@@ -1,0 +1,282 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Mongolian Baiti";
+    overflow-x: hidden;
+    background-color: #fff;
+}
+
+h1 {
+    font-size: 2.Sren;
+    font-weight: 700;
+}
+
+h2 {
+    font-size: 1.8rem;
+    font-weight: 600;
+}
+
+h3 {
+    font-size: 1.4em;
+    font-weight: 800;
+}
+
+h4 {
+    font-size: 1.1rem;
+    font-weight: 600;
+}
+
+h5 {
+    font-size: 1rem;
+    font-weight: 400;
+    color: 1d1d1d;
+}
+
+h6 {
+    color: #D8D8D8;
+}
+
+hr {
+    width: 30px;
+    height: 2px;
+    background-color: #fb774b;
+}
+
+.star {
+    padding: 10px 0px;
+}
+
+.star i {
+    font-size: 0.8rem;
+    color: goldenrod;
+}
+
+/*NAVBAR*/
+.navbar {
+    font-size: 16px;
+    font-weight: 600;
+    top: 0px;
+    left: 0px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-nav .nav-item .nav-link {
+    margin: 0px 5px;
+    color: black;
+}
+
+.nav_image1 {
+    width: 40px;
+    height: 40px;
+}
+
+.nav_image2 {
+    height: 40px;
+    margin-left: 8px;
+}
+.navbar-nav .nav-item{
+    position: relative;
+}
+.navbar-nav .nav-item .nav-link:hover,
+.navbar-nav .nav-item .nav-link.active{
+    color: #088178;
+}
+.navbar-nav .nav-item .nav-link.active::after{
+    content: "";
+    width: 30%;
+    height: 2px;
+    background: #088178;
+    position: absolute;
+    bottom: 0px;
+    left: 13px;
+}
+/*PAGE HEAD*/
+
+#page_head {
+    background-image: url("../img/banner/b2.jpg");
+    width: 100%;
+    height: 40vh;
+    background-size: cover;
+    margin-top: 57px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    background-repeat: no-repeat;
+}
+#page_head h2{
+    color: white;
+    font-size: 34px;
+}
+#page_head p{
+    color: white;
+    margin: 0em;
+    font-size: 18px;
+}
+
+/*blog*/
+#blog-container .post:hover img{
+    transform: scale(1.3) rotate(-6deg);
+    opacity: 0.8;
+}
+#blog-container .post .post-img{
+    overflow: hidden;
+    cursor: pointer;
+    border-radius: 20px;
+}
+#blog-container .post img{
+    transition: 0.2s ease;
+}
+#blog-container .post h5{
+    font-size: 20px;
+    color: #222222;
+}
+#blog-container .post p{
+    font-size: 15px;
+    color: #222222;
+}
+#blog-container .post:hover h5{
+    color: #088178;
+    cursor: pointer;
+}
+
+#blog-container .post h6{
+    transition: 0.3s ease;
+    cursor: pointer;
+}
+/*NEWSLLETTER*/
+#newsletter{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+    background-image: url("../img/banner/b14.png");
+    background-repeat: no-repeat;
+    background-color: #54545476;
+    height: 146px;
+    padding: 40px 126px;
+}
+#newsletter p{
+    margin-bottom: auto;
+    font-size: 17px;
+    color: #fff;
+}
+#newsletter h4{
+    font-size: 22px;
+    font-weight: 700;
+    color: #fff;
+}
+#newsletter p span{
+    color: #088178;
+}
+#newsletter .form{
+    display: flex;
+    width: 40%;
+}
+#newsletter input{
+    height: 3.125rem;
+    padding: 0 1.25em;
+    font-size: 14px;
+    width: 100%;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    outline: none;
+    border-top-right-radius: 0%;
+    border-bottom-right-radius: 0%;
+}
+#newsletter button{
+    height: 3.125rem;
+    padding: 0 1.25em;
+    font-size: 16px;
+    font-weight: bold;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    border-top-left-radius: 0%;
+    border-bottom-left-radius: 0%;
+    background-color: #088178;
+    color: #fff;
+    white-space: nowrap;
+}
+/*FOOTER*/
+.footer-one img {
+    width: 40px;
+    height: 40px;
+}
+
+.footer-one .logo {
+    background-color: #fff;
+    border: 3px solid #fff;
+}
+
+footer {
+    background-color: rgba(238, 237, 237, 0.974);
+}
+
+footer h5 {
+    color: #222222;
+    font-weight: 700;
+    font-size: 1.2rem;
+}
+
+footer h6 {
+    color: #222222;
+}
+
+footer li {
+    padding-bottom: 4px;
+}
+
+footer li a {
+    font-size: 0.8rem;
+    color: #999;
+}
+
+footer li a:hover {
+    font-size: 0.8rem;
+    color: #222222;
+}
+
+footer p {
+    font-size: 0.8rem;
+    color: #999;
+}
+
+.copyright {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    justify-content: space-around;
+}
+
+.copyright-item {
+    display: flex;
+    justify-content: center;
+}
+
+.payment {
+    display: inline-flex;
+    justify-content: center;
+}
+
+.rights {
+    display: inline-flex;
+    justify-content: center;
+}
+footer .footer-one .image{
+    width: 97px;
+    border: 1px solid #088178;
+}
+footer .footer-one .image2{
+    width: 204px;
+}
+footer .footer-one .icon{
+    color: #888178;
+    margin: 0px 2px;
+}
+footer .footer-one .icon:hover{
+    color: #222222;
+}
